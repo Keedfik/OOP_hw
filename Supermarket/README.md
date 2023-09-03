@@ -1,18 +1,7 @@
-## Getting Started
+## Supermarket
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Принципы ООП Абстракция и интерфейсы. Пример проектирования.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- повторили теорию базовых определений ООП – абстракция, наследование, полиморфизм
+- получили практические навыки в построении абстрактных сущностей и интерфейсов
+- научились использовать правильно интерфейсы и абстрактные классы
