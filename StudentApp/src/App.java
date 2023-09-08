@@ -2,9 +2,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import Controllers.AccountController;
+import Domen.PersonComparator;
 import Domen.Student;
 import Domen.StudentGroup;
 import Domen.StudentStream;
+import Domen.Teacher;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -53,5 +56,25 @@ public class App {
 
         Collections.sort(stream12.getStream());
         System.out.println(stream12);
+
+        Teacher t1 = new Teacher("Галина", 55, "Docent");
+        Teacher t2 = new Teacher("Татьяна", 57, "Docent");
+        Teacher t3 = new Teacher("Олег", 36, "Учитель");
+
+        System.out.println(new PersonComparator<Student>().compare(s1, s3));
+
+        // AccountController controller = new AccountController();
+        // controller.paySalary(t1, 50000);
+        // controller.paySalary(s1, 50000);
+
+        AccountController.paySalary(t1, 50000);
+
+        System.out.println(AccountController.averageAge(listStud1));
+
+        List<Teacher> teacherList1= new ArrayList<Teacher>();
+        teacherList1.add(t1);
+        teacherList1.add(t2);
+        teacherList1.add(t3);
+        System.out.println(AccountController.averageAge(teacherList1));
     }
 }
